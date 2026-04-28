@@ -14,7 +14,6 @@ public class Main {
         Servicos servico4 = new Servicos("Hidratação", 60.00);
         Servicos servico5 = new Servicos("Limpeza de pele", 80.00);
 
-
         lista.add(servico1);
         lista.add(servico2);
         lista.add(servico3);
@@ -30,5 +29,10 @@ public class Main {
 
         servico4.exibirServico();
         servico5.exibirServico();
+
+        System.out.println("----AGENDAMENTO------");
+        Agendamento agendamento = new Agendamento("Marcelo", "Corte", "30/09 as 08:00");
+        agendamento.confirmar();
+        agendamento.exibirResumo();
     }
 }
